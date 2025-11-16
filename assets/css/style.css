@@ -1,4 +1,4 @@
-/* Reset margins and padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,24 +10,24 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Main container */
+
 .container-fluid {
     width: 100%;
     padding: 0;
 }
 
-/* Header row */
+
 .row {
     display: flex;
-    justify-content: space-between; /* Pushes left and right to corners */
-    align-items: center; /* Vertically centers everything */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 30px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     min-height: 80px;
 }
 
-/* Left side - Logo and title */
+
 .header_left_side {
     display: flex;
     align-items: center;
@@ -58,10 +58,10 @@ body {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-/* Right side - Search bar */
+
 .header_left_side {
     margin-left: center;
-    /* This will automatically go to right corner due to space-between */
+   
 }
 
 .header_right_side input {
@@ -85,32 +85,4 @@ body {
     color: #999;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-        text-align: center;
-    }
-    
-    .header_left_side {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .header_right_side input {
-        width: 200px;
-    }
-}
 
-@media (max-width: 480px) {
-    .page_title {
-        font-size: 20px;
-    }
-    
-    .header_right_side input {
-        width: 180px;
-        padding: 8px 15px;
-    }
-}
